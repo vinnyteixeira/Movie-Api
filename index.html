@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Search Movie</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="dist/fonts/installFonts.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link rel="stylesheet" href="src/less/loader.less" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-scroller-target="body">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="search-movie">
+          <img
+            alt="Brand"
+            src="./src/images/svg pipoca.png"
+            height="15%"
+            width="15%"
+          />Search Movie
+        </h1>
+        <div class="container-fluid">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img
+                  alt="Brand"
+                  src="./src/images/svg clapper.png"
+                  height="30px"
+                  width="30px"
+                />
+              </a>
+            </div>
+            <form
+              id="searchForm"
+              class="navbar-form navbar-right js-search-form"
+              role="search"
+            >
+              <div class="form-group cont-nav">
+                <input
+                  id="searchInput"
+                  type="text"
+                  class="form-control input"
+                  placeholder="Search movie..."
+                />
+                <button type="submit" class="btn btn-primary js-loader-init">
+                  Search
+                </button>
+              </div>
+            </form>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="js-container-movie details container-fluid"></div>
+    <div class="js-container-favorite-movie container-favorite-movie">
+      <h2 class="text-center style-text">Favorite Movies</h2>
+
+      <div class="js-container"></div>
+    </div>
+
+    <button class="btn btn-primary position-button" data-scroller-key="body">
+      <img height="20vh" src="src/images/svg seta-cima.png" alt="seta-cima" />
+    </button>
+
+    <!-- <footer class="footer navbar-fixed-bottom">Search Movie ©</footer> -->
+
+    <script src="src/lib/jquery-3.4.1.min.js"></script>
+    <script src="src/lib/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script src="dist/js/movie.details.js"></script>
+    <script src="dist/js/favorite.movie.js"></script>
+    <script src="src/js/fh-components/scroller.js"></script>
+    <script src="src/js/fh-components/loader.js"></script>
+    <script src="src/js/fh-components/collapse.js"></script>
+  </body>
+</html>
